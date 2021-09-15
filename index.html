@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <!-- Bootstrab css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontAwsome/all.min.css">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <h3 class="title text-center  display-3 mt-5"> <strong> Welcome At To-Do app</strong></h3>
+    <div class="dod ">
+
+        <button id="modalBtn" class="btn btn-danger btn-block col-3 mt-5 mx-auto">Add tasks</button>
+
+        <div id="modal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add task</h5>
+                        <button type="button" onclick="showModalFunction()" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Add task</label>
+                                        <input type="text" id="taskInput" placeholder="Add task" class="form-control">
+
+
+                                        <!--    entery   ruels     data         -->
+                                        <div id="invalidData" class="alert alert-danger none">
+                                            Enter a valid data
+                                            <button id="closeBtn" type="button" class="close" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div id="invalidData2" class="alert alert-danger none">
+                                            Enter more than 3 characters
+                                            <button id="closeBtn2" type="button" class="close" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div id="invalidData3" class="alert alert-danger none">
+                                            Enter less than 20 characters
+                                            <button id="closeBtn3" type="button" class="close" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button id="addBtn" class="btn btn-success btn-block">Add task</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="showModalFunction()" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-md-8 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <div id="allTasks">
+
+                    </div>
+                    <div id="noTasks" class="alert alert-warning">
+                        <h4 class="text-center">No Tasks Added Yet</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/f8905b4eb0.js" crossorigin="anonymous"></script>
+
+    <!-- My JS File -->
+    <script src="main.js"></script>
+</body>
+
+</html>

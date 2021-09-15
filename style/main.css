@@ -1,0 +1,47 @@
+body {
+    background-image: url('https://thumbs.dreamstime.com/z/to-do-list-phrase-handwritten-chalk-blackboard-black-wood-background-things-top-view-152042181.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .dod{
+    margin-top: 300px;
+}
+
+.card {
+    background-color: #333;
+    color: white;
+}
+
+h3{
+    color: rgb(214, 214, 135);
+}
+
+.none {
+    display: none;
+}
+
+.dicoration {
+    text-decoration: line-through;
+    background-color: gray;
+}
+
+.block {
+    display: block
+}
+
+.light {
+    background-image: url('https://thumbs.dreamstime.com/z/to-do-list-phrase-handwritten-chalk-blackboard-black-wood-background-things-top-view-152042181.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dark {
+    background-image: url('https://thumbs.dreamstime.com/b/task-white-task-word-white-background-205555162.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
